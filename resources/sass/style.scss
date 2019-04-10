@@ -1,0 +1,145 @@
+@import 'reset';
+@import 'https://fonts.googleapis.com/css?family=Oregano:400,400i&subset=latin-ext';
+@import 'https://fonts.googleapis.com/css?family=Quando&subset=latin-ext';
+@import 'https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&subset=latin-ext';
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
+@font-face {
+    font-family: LatoLight;
+    src: url('/assets/fonts/LatoLatin-Light.woff')
+}
+@font-face {
+    font-family: LatoBlackItalic;
+    src: url('/assets/fonts/LatoLatin-BlackItalic.woff')
+}
+
+$grey: "#dddddd";
+$assets: "/assets/";
+
+html {
+    font-size: 62.5%; 
+    font-family: 'LatoLight', serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+main {
+
+}
+
+.navbar-collapse {
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.mt-6 {
+    margin-top: 6rem;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-family: 'Oregano', cursive; 
+}
+
+ol.recipe-body {
+    list-style: decimal;
+    padding-left: 1.8rem;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+form {
+    font-size: 1.5rem;
+}
+
+textarea {
+    height: 25rem;
+}
+
+.recipe-header {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.recipe-body {
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+.phoneLogo {
+    img {
+        width: 12rem;
+        margin-right: 2rem;
+    }
+}
+
+// ekrany lg i więkze
+@media all and (min-width: 992px){
+    .left {
+        background-color: black;
+//        background-image: url(/szczurgotuje/assets/lback.jpg);
+        background-image: url($assets + 'lback.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        min-height: 35vh;
+        }
+
+    .leftdark {
+        background-image: url($assets + 'lbackdark.jpg');     
+        background-repeat: no-repeat;    
+        min-height: 100vh;
+        position: fixed;
+        }
+}
+
+
+// Ekrany md i mniejsze
+@media all and (max-width: 992px){
+    .left {
+    background-color: black;
+    background-image: url($assets + 'tbackdark.jpg');
+    background-attachment: local;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 40vh;
+    padding-bottom: 2rem;        
+        .top-text {
+            h1{
+                font-family: 'LatoLight', serif;
+                display: inline-block;
+                padding-left: 1rem;
+            }
+        }
+    }
+    
+    .left-dark {
+    }
+    
+    .mt-6 {
+        margin-top: 1rem;
+    }
+
+    @media all and (max-width: 768px){
+        .mainIco {
+            display: none;
+        }
+
+        .phoneLogo {
+            display:block;
+            img {
+                width: 57%;
+            }
+
+        }
+    } 
+}
+    

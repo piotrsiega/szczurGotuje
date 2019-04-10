@@ -1,0 +1,236 @@
+@import url(https://fonts.googleapis.com/css?family=Oregano:400,400i&subset=latin-ext);@import url(https://fonts.googleapis.com/css?family=Quando&subset=latin-ext);@import url(https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&subset=latin-ext);@import url(https://fonts.googleapis.com/css?family=Ubuntu);html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* remember to define focus styles! */
+
+:focus {
+  outline: 0;
+}
+
+body {
+  line-height: 1;
+  color: black;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+blockquote,
+q {
+  quotes: "" "";
+}
+
+@font-face {
+  font-family: LatoLight;
+  src: url("/assets/fonts/LatoLatin-Light.woff");
+}
+
+@font-face {
+  font-family: LatoBlackItalic;
+  src: url("/assets/fonts/LatoLatin-BlackItalic.woff");
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "LatoLight", serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.navbar-collapse {
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.mt-6 {
+  margin-top: 6rem;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-family: "Oregano", cursive;
+}
+
+ol.recipe-body {
+  list-style: decimal;
+  padding-left: 1.8rem;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+form {
+  font-size: 1.5rem;
+}
+
+textarea {
+  height: 25rem;
+}
+
+.recipe-header {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.recipe-body {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.phoneLogo img {
+  width: 12rem;
+  margin-right: 2rem;
+}
+
+@media all and (min-width: 992px) {
+  .left {
+    background-color: black;
+    background-image: url("/assets/lback.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 35vh;
+  }
+
+  .leftdark {
+    background-image: url("/assets/lbackdark.jpg");
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: fixed;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .left {
+    background-color: black;
+    background-image: url("/assets/tbackdark.jpg");
+    background-attachment: local;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 40vh;
+    padding-bottom: 2rem;
+  }
+
+  .left .top-text h1 {
+    font-family: "LatoLight", serif;
+    display: inline-block;
+    padding-left: 1rem;
+  }
+
+  .mt-6 {
+    margin-top: 1rem;
+  }
+}
+
+@media all and (max-width: 992px) and (max-width: 768px) {
+  .mainIco {
+    display: none;
+  }
+
+  .phoneLogo {
+    display: block;
+  }
+
+  .phoneLogo img {
+    width: 57%;
+  }
+}
+
