@@ -10,12 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('nowyprzepis', 'pagesController@getRecipeForm');
-Route::get('przepis', 'pagesController@getRecipe');
-Route::get('przepisy', 'pagesController@getRecipesList');
-Route::get('conowego', 'pagesController@getNews');
+Route::get('/nowyprzepis', 'pagesController@getRecipeForm')->name('nowyprzepis');
+Route::get('/przepis', 'recipeController@show')->name('przepis');
+Route::get('/przepisy', 'pagesController@getRecipesList')->name('przepisy');
+Route::get('/conowego', 'pagesController@getNews')->name('conowego');
 Route::get('/', 'pagesController@getHome');
-Route::resource('przepis', 'RecipeController');
+//Route::resource('przepis', 'RecipeController');
 
 
 //Route::get('/', function () {

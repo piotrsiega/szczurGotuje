@@ -29,7 +29,7 @@
            
             <h1 class="display-3 text-center mb-5">Dodaj przepis</h1> 
             
-            <form class="md-form ml-m-5" enctype="multipart/form-data" action="{{ route('przepis.store') }}" method="post">
+            <form class="md-form ml-m-5" enctype="multipart/form-data" action="" method="post">
                @csrf
                 <div class="form-group row ">
                     <div class="col-sm-10">
@@ -40,7 +40,7 @@
                     <div class="col-sm-10">
                         <select name="category" id="category" class="form-control form-control-lg border border-dark">
                             <option selected disabled>Wybierz...</option>
-                            Porady
+                            <option value="">Porady</option>
                             <option value="">Śniadania</option>
                             <option disabled>Obiady</option>
                             <option value="">&emsp;Zupy</option>

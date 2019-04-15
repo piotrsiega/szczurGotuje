@@ -18,7 +18,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a href="conowego" class="nav-link">Porady</a>
+                        <a href="{{ route('przepisy') }}" class="nav-link">Porady</a>
                     </li>
                     <li class="nav-item">
                         <a href="conowego" class="nav-link">Śniadania</a>
