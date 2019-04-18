@@ -11,8 +11,8 @@
 |
 */
 Route::get('/nowyprzepis', 'pagesController@getRecipeForm')->name('nowyprzepis');
-Route::get('/przepis', 'recipeController@show')->name('przepis');
-Route::get('/przepisy', 'pagesController@getRecipesList')->name('przepisy');
+Route::get('/przepis/{id}', 'recipeController@show')->name('przepis');
+Route::get('/przepisy/{category}', 'recipeController@index')->name('przepisy');
 Route::get('/conowego', 'pagesController@getNews')->name('conowego');
 Route::get('/', 'pagesController@getHome');
 //Route::resource('przepis', 'RecipeController');

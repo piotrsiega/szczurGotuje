@@ -152,6 +152,10 @@ ol.recipe-body {
   padding-left: 1.8rem;
 }
 
+ol.components {
+  font-size: 1.2rem;
+}
+
 p {
   font-size: 1.5rem;
   line-height: 1.4;

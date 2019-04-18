@@ -15,12 +15,13 @@ class CreateRecipesTable extends Migration
     {
         Schema::create('recipes', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->smallInteger('category');
             $table->string('title', 64);
             $table->string('time', 16);
             $table->string('components');
-            $table->string('exec');
+            $table->text('exec');
             $table->string('comments', 255)->nullable($value = true);
-            $table->string('img', 32);  
+            $table->string('img', 255)->nullable($value = true);
             $table->timestamps();
         });
     }

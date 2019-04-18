@@ -135,7 +135,7 @@ addStepIcon.onclick = function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\www\szczurGotuje\resources\js\addinput.js */"./resources/js/addinput.js");
+module.exports = __webpack_require__(/*! /home/www/szczurGotuje/resources/js/addinput.js */"./resources/js/addinput.js");
 
 
 /***/ })

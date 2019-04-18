@@ -37,26 +37,29 @@
                             <i class="fa fa-list-alt"></i> Kategoria:
                         </label>
                     </div>
+                    <!-- Wpisy meny głównego mają value = pełne dziesiątki np. 10, 20, 30, podmenu jednostki - 11, 12, 21,22 itp... --> 
                     <div class="col-sm-10">
                         <select name="category" id="category" class="form-control form-control-lg border border-dark">
                             <option selected disabled>Wybierz...</option>
-                            <option value="">Porady</option>
-                            <option value="">Śniadania</option>
+                            <option disabled>Różne</option>
+                            <option value="11">&emsp;Porady</option>
+                            <option value="12">&emsp;O niczym i o...</option>
+                            <option value="20">Śniadania</option>
                             <option disabled>Obiady</option>
-                            <option value="">&emsp;Zupy</option>
-                            <option value="">&emsp;Dania główne</option>
-                            <option value="">&emsp;Surówki i jarzynki</option>
+                            <option value="31">&emsp;Zupy</option>
+                            <option value="32">&emsp;Dania główne</option>
+                            <option value="33">&emsp;Surówki i jarzynki</option>
                             <option disabled>Do kawy</option>
-                            <option value="">&emsp;Ciasta</option>
-                            <option value="">&emsp;Desery</option>
-                            <option value="">Kolacje</option>
-                            <option value="">Sałatki</option>
+                            <option value="41">&emsp;Ciasta</option>
+                            <option value="42">&emsp;Desery</option>
+                            <option value="50">Kolacje</option>
+                            <option value="60">Sałatki</option>
                             <option disabled>Napoje</option>
-                            <option value="">&emsp;Ciepłe</option>
-                            <option value="">&emsp;Zimne</option>
+                            <option value="71">&emsp;Ciepłe</option>
+                            <option value="72">&emsp;Zimne</option>
                             <option disabled>Szybkie żarcie</option>
-                            <option value="">&emsp;Szybkowar</option>
-                            <option value="">&emsp;Fastfood</option>
+                            <option value="81">&emsp;Szybkowar</option>
+                            <option value="82">&emsp;Fastfood</option>
                         </select>
                     </div>
                 </div>

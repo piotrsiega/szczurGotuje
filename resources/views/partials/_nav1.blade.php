@@ -17,18 +17,21 @@
                             <a class="dropdown-item" href="">Kontakt</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a href="{{ route('przepisy') }}" class="nav-link">Porady</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="conowego" class="nav-link">Śniadania</a>
+                    <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" id="about">Różne</a>
+                            <div class="dropdown-menu shadow-lg">
+                                <a class="dropdown-item" href="/przepisy/11">Porady</a>
+                                <a class="dropdown-item" href="/przepisy/12">O niczym i o...</a>
+                            </div>
+                        </li>                    <li class="nav-item">
+                        <a href="/przepisy/20" class="nav-link">Śniadania</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" id="dinner">Obiady</a>
                         <div class="dropdown-menu shadow-lg">
-                            <a class="dropdown-item" href="/przepisy">Zupy</a>
-                            <a class="dropdown-item" href="/przepisy">Dania główne</a>
-                            <a class="dropdown-item" href="/przepisy">Surówki i jarzyny</a>
+                            <a class="dropdown-item" href="/przepisy/31">Zupy</a>
+                            <a class="dropdown-item" href="/przepisy/32">Dania główne</a>
+                            <a class="dropdown-item" href="/przepisy/33">Surówki i jarzyny</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
